@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+header {
+    background-image: url(images/Portada/img\ 1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fdfdfd;
+    display: block;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li a:hover {
+    color: #e70b25;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 200px 0 150px 0;
+}
+
+.header-txt {
+    width: 40%;
+    padding-right: 25px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.header-txt p {
+    font-size: 18px;
+    color: #050505;
+}
+
+.header-img {
+    width: 40%;
+}
+
+.KandApeace {
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn-1 {
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0c29 0%, #900314 100%);
+    padding: 10px 35px;
+    margin-right: 20px;
+    color: #fdfdfd;
+    border-radius: 25px;
+}
+
+.btn-2 {
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 10px 35px;
+    margin-right: 20px;
+    color: #000000;
+    border-radius: 25px;
+}
+
+.btn-1:hover {
+    background: linear-gradient(90deg, #ff001e 0%, #5f050f 100%);
+}
+
+.btn-2:hover {
+    border: 1px solid #fa0d29;
+}
+
+.icon {
+    width: 20px;
+}
+
+.product-menu {
+    padding: 50px 0 150px 0;
+}
+
+.title {
+    color: #000000;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.product {
+    display: flex;
+    position: relative;
+}
+
+.hoja {
+    right: 0;
+    position: absolute;
+    bottom: -150px;
+    width: 120px;
+}
+
+.menu-nav {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.tab {
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px 35px;
+    border-radius: 25px;
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: #24252a;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: linear-gradient(90deg, #e70b25 0%, #900314 100%);
+    color: #fdfdfd;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.visible {
+    display: initial;
+}
+
+.box-container-1,
+.box-container-2,
+.box-container-3,
+.box-container-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    background-image: url(images/Portada/img\ 2.ico);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
+.box-1:nth-child(4) {
+    display: inline-block;
+}
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4) {
+    display: inline-block;
+}
+
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4) {
+    display: inline-block;
+}
+
+.box-4:nth-child(1),
+.box-4:nth-child(2),
+.box-4:nth-child(3),
+.box-4:nth-child(4) {
+    display: inline-block;
+}
+
+.image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image img {
+    width: 180px;
+}
+
+.content h3 {
+    font-size: 20px;
+    color: #030303;
+}
+
+.content p {
+    font-size: 15px;
+    color: #000000;
+    line-height: 2;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: rgb(220, 20, 60);
+    border-color: #fdfdfd;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #334;
+}
+
+.price {
+    font-size: 14px;
+    color: #ff0606;
+}
+
+.buy {
+    padding: 1px 15px 0px 15px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #95b52c 0%, #586e25 100%);
+}
+
+.buy img {
+    width: 15px;
+}
+
+.load-more {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 13px 35px;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background: linear-gradient(90deg, #e70b25 0%, #900314 100%);
+    border-color: rgb(220, 20, 60);
+    color: #fdfdfd;
+}
+
+.services {
+    margin-top: 100px;
+    padding: 70px 0;
+    background-color: aqua;
+    text-align: center;
+}
+
+.services h2 {
+    color: #2d343c;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.service {
+     background-color: #ffffff;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     padding: 35px;
+     text-align: left;
+}
+
+.service h3 {
+    font-size: 20px;
+    color: #050505;
+    margin-bottom: 15px;
+}
+
+.hr {
+    width: 100px;
+    border: 2px solid #f35200;
+}
+
+.service p {
+    font-size: 16px;
+    color: #575757;
+    margin-top: 15px;
+}
+
+.footer {
+    padding: 150px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-2 {
+    width: 150px;
+
+}
+
+.links h4 {
+    color: #073870;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.links ul li a {
+    color: #fdfdfd;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #dd241b;
+    border-radius: 50%;
+}
+
+.social:hover {
+    background-color: #dd241b;
+}
+
+.social img {
+    margin: 6px 0 0 8px;
+}
+
+@media(max-width: 991px) {
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f30000fb;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #a0a0a0;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-txt {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .btn-2 {
+        margin: 0 0 20px 0;
+    }
+
+    .header-img {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .product-menu {
+        padding: 30px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .hoja {
+        display: none;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        margin-bottom: 25px;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .box .image {
+        height: 200px;
+    }
+
+    .services {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .social img {
+        margin: 8px 0 0 0;
+    }
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links h4 {
+        margin: 25px 0 10px 0;
+    }
+
+}
